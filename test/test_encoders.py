@@ -22,6 +22,8 @@ def test_encode_data_roundtrip():
     assert testdata.min() == rtripped.min()
     assert testdata.max() == rtripped.max()
 
+def test_georeplubili():
+    assert -0.3 == _decode([1, 134, 157])
 
 def test_encode_failrange():
     testdata = np.zeros((2))
